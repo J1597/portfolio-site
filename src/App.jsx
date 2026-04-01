@@ -148,18 +148,16 @@ function App() {
           <h2 className="page-section-heading text-center text-uppercase text-white">
             About
           </h2>
-
-          <p className="h6 text-center mt-4">
-            I’m a computer science graduate with an associate-level diploma and a
-            strong focus on hands-on technical learning. This portfolio website,
-            built with React, showcases my work and reflects my growing experience
-            in frontend development and system design.
+          <p className="font-weight-bold">
+            I’m a computer science graduate with a strong interest in networking, systems, and hands-on technical work. I enjoy building real projects that help me understand how things actually work, whether that’s setting up services on my home network, configuring remote access, or developing applications using modern tools. This website itself is something I built using React plus Bootstrap, and it reflects both my technical skills and my approach to learning by doing.
           </p>
 
-          <p className="h6 text-center mt-4">
-            I’ve built a home lab environment working with VPNs, DNS servers,
-            Docker, and virtual machines. I also build Unreal Engine 5 projects,
-            exploring level design and interactive systems.
+          <p className="font-weight-bold">
+            A lot of my experience comes from working on practical projects. I’ve set up a Pi-hole DNS server using Docker on a Windows machine to manage and filter network traffic, and I built a home VPN using OpenVPN on my router with Dynamic DNS through No-IP so I can securely access my network from anywhere. I also run a Jellyfin media server, which I configured for local and remote streaming, giving me experience with file sharing, network paths, and handling media across devices. Projects like these helped me understand how systems connect together, including DNS, routing, IP addressing, and how real-world networks behave outside of theory.
+          </p>
+
+          <p className="font-weight-bold">
+            I’ve also spent time learning software development, including building a game project in Unreal Engine 5 using C++. That experience helped me get more comfortable with object-oriented programming, debugging, and working through build and runtime issues. Overall, I like figuring things out by building and troubleshooting, and I’m always looking for ways to improve my skills. I’m currently focused on growing in IT and networking roles where I can apply what I’ve learned and keep developing.
           </p>
         </div>
       </section>
@@ -201,9 +199,15 @@ function App() {
             <img className="img-fluid my-4" src="images/pihole-diagram.png" />
 
             <p className="text-secondary">
-              Built a Pi-hole DNS server to block ads network-wide. This project
-              involved configuring DNS routing, Docker deployment, and local network
-              management.
+              I set up a Pi-hole DNS server on my home network to better understand how DNS works and how network-wide filtering can be implemented. I hosted Pi-hole inside a Docker container on a Windows machine and configured my router to use it as the main DNS server for all connected devices. This allowed all DNS queries on the network to pass through Pi-hole first, giving me visibility into traffic and control over blocking ads and tracking domains.
+            </p>
+
+            <p className="text-secondary">
+              Through this setup, I learned how DNS requests flow from devices to the router and then to a local DNS server before reaching external resolvers. I tested and verified that Pi-hole was working by checking query logs and using tools like <em>nslookup</em> to confirm that blocked domains were resolving to 0.0.0.0. I also worked through issues like making sure the correct device was handling DNS requests and confirming that different devices on the network were actually using Pi-hole.
+            </p>
+
+            <p className="text-secondary">
+              This project helped me better understand how local services can be integrated into a home network and how DNS can be used not just for resolution, but also for filtering and control. It also gave me hands-on experience with Docker, networking basics, and troubleshooting real-world issues in a self-hosted setup.
             </p>
 
             <button className="btn btn-primary" data-bs-dismiss="modal">
@@ -224,8 +228,15 @@ function App() {
             <img className="img-fluid my-4" src="images/vpn-diagram.png" />
 
             <p className="text-secondary">
-              Configured a home VPN for secure remote access. Worked with port
-              forwarding, DDNS, firewall rules, and networking troubleshooting.
+              I set up a home VPN using OpenVPN on my router so I could securely access my home network from outside. The goal was to understand how remote access works and how devices connect back into a private network over the internet. I configured the VPN directly on the router and tested connections from external networks to make sure I could reach local services.
+            </p>
+
+            <p className="text-secondary">
+              Since my home network uses a dynamic public IP, I also set up Dynamic DNS using No-IP with a custom hostname. This allowed me to connect to my network using a consistent domain name instead of a changing IP address. The router automatically updates the hostname with my current public IP, which keeps the VPN connection stable over time.
+            </p>
+
+            <p className="text-secondary">
+              While working on this, I learned how public vs private IP addressing works, how port forwarding and routing affect connectivity, and how DNS plays a role in remote access. I also ran into and fixed issues related to DNS resolution, connection failures, and client configuration, which helped me understand how all the pieces fit together in a real setup.
             </p>
 
             <button className="btn btn-primary" data-bs-dismiss="modal">
@@ -255,9 +266,16 @@ function App() {
                 ▶ Watch Gameplay
               </a>
             </div>
+            <p className="text-secondary">
+              I developed this Unreal Engine 5 project to learn how game development works using C++ and the Unreal Engine workflow. I followed a structured tutorial as a guide, but focused on understanding how everything connects, including class structure, components, and how gameplay logic is implemented and compiled inside the engine. This gave me experience working with Unreal’s C++ system instead of just using visual scripting.
+            </p>
 
             <p className="text-secondary">
-              Built a UE5 project exploring level design and gameplay systems.
+              The project includes core gameplay systems such as player movement, enemy AI behavior, combat mechanics, hit detection, health systems, and basic UI elements like a HUD. I worked with character classes, animation setup, and interactions between different actors in the world. I also dealt with things like AI sensing, enemy responses, and event-driven logic that ties gameplay systems together.
+            </p>
+
+            <p className="text-secondary">
+              A big part of this project was learning how to troubleshoot and debug issues. I worked through build errors, project configuration problems, and differences between how things behave in the editor versus a standalone build. I also learned how Unreal handles project files, compilation, and dependencies, which helped me get more comfortable working with larger systems and understanding how everything runs behind the scenes.
             </p>
 
             <button className="btn btn-primary" data-bs-dismiss="modal">
