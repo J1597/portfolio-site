@@ -46,7 +46,7 @@ function App() {
               My Portfolio
             </p>
             <p className="h5 font-weight-light mb-0">
-              IT / Networking / Projects
+              Software Development / IT / Networking / Projects
             </p>
           </div>
         </div>
