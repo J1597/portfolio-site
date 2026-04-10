@@ -64,79 +64,97 @@ function App() {
           </p>
 
           <div className="row justify-content-center">
-            {/* PIHOLE */}
-            <div className="col-md-6 col-lg-4 mb-5">
-              <div
-                className="portfolio-item mx-auto"
-                data-bs-toggle="modal"
-                data-bs-target="#projectModalPihole"
-              >
-                <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div className="portfolio-item-caption-content text-white">
-                    View Project
+            <div className="row">
+              {/* PIHOLE */}
+              <div className="col-md-6 mb-5">
+                <div
+                  className="portfolio-item mx-auto"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectModalPihole"
+                >
+                  <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    <div className="portfolio-item-caption-content text-white">
+                      View Project
+                    </div>
                   </div>
+                  <img
+                    className="img-fluid"
+                    src="images/pihole-title.png"
+                    alt="Pi-hole"
+                  />
                 </div>
-
-                <img
-                  className="img-fluid"
-                  src="images/pihole-title.png"
-                  alt="Pi-hole"
-                />
+                <h3 className="h5 text-center text-secondary mt-3 mb-0">
+                  Pi-hole DNS Server
+                </h3>
               </div>
-
-              <h3 className="h5 text-center text-secondary mt-3 mb-0">
-                Pi-hole DNS Server
-              </h3>
+              {/* VPN */}
+              <div className="col-md-6 mb-5">
+                <div
+                  className="portfolio-item mx-auto"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectModalVpn"
+                >
+                  <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    <div className="portfolio-item-caption-content text-white">
+                      View Project
+                    </div>
+                  </div>
+                  <img
+                    className="img-fluid"
+                    src="images/vpn-title.png"
+                    alt="VPN"
+                  />
+                </div>
+                <h3 className="h5 text-center text-secondary mt-3 mb-0">
+                  VPN Setup
+                </h3>
+              </div>
             </div>
-
-            {/* VPN */}
-            <div className="col-md-6 col-lg-4 mb-5">
-              <div
-                className="portfolio-item mx-auto"
-                data-bs-toggle="modal"
-                data-bs-target="#projectModalVpn"
-              >
-                <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div className="portfolio-item-caption-content text-white">
-                    View Project
+            <div className="row">
+              {/* UE5 */}
+              <div className="col-md-6 mb-5">
+                <div
+                  className="portfolio-item mx-auto"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectModalUe5"
+                >
+                  <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    <div className="portfolio-item-caption-content text-white">
+                      View Project
+                    </div>
                   </div>
+                  <img
+                    className="img-fluid"
+                    src="/images/ue5-title.png"
+                    alt="UE5"
+                  />
                 </div>
-
-                <img
-                  className="img-fluid"
-                  src="images/vpn-title.png"
-                  alt="VPN"
-                />
+                <h3 className="h5 text-center text-secondary mt-3 mb-0">
+                  Unreal Engine 5 Project
+                </h3>
               </div>
-
-              <h3 className="h5 text-center text-secondary mt-3 mb-0">
-                VPN Setup
-              </h3>
-            </div>
-
-            {/* UE5 */}
-            <div className="col-md-6 col-lg-4 mb-5">
-              <div
-                className="portfolio-item mx-auto"
-                data-bs-toggle="modal"
-                data-bs-target="#projectModalUe5"
-              >
-                <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div className="portfolio-item-caption-content text-white">
-                    View Project
+              {/* REACT AND VITE WEBSITE */}
+              <div className="col-md-6 mb-5">
+                <div
+                  className="portfolio-item mx-auto"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectModalWebsite"
+                >
+                  <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    <div className="portfolio-item-caption-content text-white">
+                      View Project
+                    </div>
                   </div>
+                  <img
+                    className="img-fluid"
+                    src="images/website-diagram.png"
+                    alt="React and Vite Website"
+                  />
                 </div>
-
-                <img
-                  className="img-fluid"
-                  src="/images/ue5-title.png"
-                  alt="UE5"
-                />
+                <h3 className="h5 text-center text-secondary mt-3 mb-0">
+                  React and Vite Website
+                </h3>
               </div>
-
-              <h3 className="h5 text-center text-secondary mt-3 mb-0">
-                Unreal Engine 5 Project
-              </h3>
             </div>
           </div>
         </div>
@@ -284,6 +302,41 @@ function App() {
           </div>
         </div>
       </div>
+
+        {/* REACT AND VITE WEBSITE MODAL */}
+        <div className="portfolio-modal modal fade" id="projectModalWebsite">
+          <div className="modal-dialog modal-xl">
+            <div className="modal-content text-center p-4">
+              <button className="btn-close ms-auto" data-bs-dismiss="modal"></button>
+
+
+              <h2 className="text-secondary mt-3">Bark and Lounge Doggy Daycare Website</h2>
+
+              <img className="img-fluid my-4" src="images/WebsiteImage.png" alt="Bark and Lounge Website" />
+
+              <div className="ratio ratio-16x9 my-4 d-flex justify-content-center align-items-center">
+                <a
+                  href="https://www.barkandlounge.ca"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-lg"
+                >
+                  View Live Site
+                </a>
+              </div>
+
+              <p className="text-secondary">
+                I developed the Bark and Lounge doggy daycare website using React, Vite, and Bootstrap to deliver a fast, modern, and user-friendly experience for both the business and its customers. The site is hosted on Vercel, leveraging automated CI/CD, custom domains, and HTTPS for a secure and reliable deployment. I architected the codebase with modular, reusable components and followed best practices for maintainability and scalability. A key feature is the integration of Setmore for online booking—customers can easily schedule appointments through an embedded, customized booking system, streamlining client management and improving operational efficiency for the business. This project demonstrates my ability to deliver production-ready web applications, integrate third-party APIs, and provide real business value—skills directly relevant to IT and software engineering roles.
+              </p>
+
+              <div className="d-flex justify-content-center gap-3 mt-4">
+                <button className="btn btn-primary" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
     </>
   )
 }
