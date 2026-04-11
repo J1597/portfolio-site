@@ -278,8 +278,8 @@ function App() {
 
           <div className="text-center mt-4">
             <p className="h6 text-secondary mb-2">
-              <a href="mailto:jeevangill@msn.com" className="text-secondary">
-                jeevangill@msn.com
+              <a href="mailto:jeevangilldev@gmail.com" className="text-secondary">
+                jeevangilldev@gmail.com
               </a>
             </p>
             <p className="h6 text-secondary">
