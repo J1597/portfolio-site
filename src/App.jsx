@@ -1,6 +1,16 @@
 import './App.css'
+import { useEffect } from 'react'
 
 function App() {
+  useEffect(() => {
+    const modal = document.getElementById('projectModalUe5')
+    const stopVideo = () => {
+      const iframe = document.getElementById('ue5Iframe')
+      if (iframe) iframe.src = iframe.src
+    }
+    modal?.addEventListener('hidden.bs.modal', stopVideo)
+    return () => modal?.removeEventListener('hidden.bs.modal', stopVideo)
+  }, [])
   return (
     <>
       {/* NAVBAR */}
@@ -382,6 +392,7 @@ function App() {
             <h2 className="text-secondary mt-3">Unreal Engine 5 Project</h2>
 
             <iframe
+              id="ue5Iframe"
               src="https://www.youtube.com/embed/wvbgWcTxk14"
               title="Unreal Engine 5 Gameplay"
               allowFullScreen
