@@ -99,3 +99,31 @@ body {
 .nav-links a:hover {
   color: white;
 }
+
+/* Pihole carousel */
+.modal-carousel .carousel-item-inner {
+  height: 580px;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-carousel .carousel-item img {
+  max-height: 580px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Skill badges */
+.skill-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: transparent;
+  color: #495057;
+  border: 1.5px solid #adb5bd;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
