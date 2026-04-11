@@ -293,7 +293,7 @@ function App() {
 
             <h2 className="text-secondary mt-3">Pi-hole DNS Server</h2>
 
-            <div id="piholeCarousel" className="carousel mt-4 modal-carousel" data-bs-ride="false">
+            <div id="piholeCarousel" className="carousel mt-4 modal-carousel" data-bs-ride="false" data-bs-touch="false">
               <div className="carousel-inner">
                 <div className="carousel-item active">
                   <div className="carousel-item-inner">

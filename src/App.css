@@ -101,6 +101,10 @@ body {
 }
 
 /* Pihole carousel */
+.modal-carousel .carousel-item {
+  transition: none !important;
+}
+
 .modal-carousel .carousel-item-inner {
   height: 580px;
   background: #f8f9fa;
