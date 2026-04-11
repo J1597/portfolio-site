@@ -25,6 +25,11 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item mx-0 mx-lg-1">
+                <a className="nav-link py-2 px-2" href="#skills">
+                  Skills
+                </a>
+              </li>
+              <li className="nav-item mx-0 mx-lg-1">
                 <a className="nav-link py-2 px-2" href="#portfolio">
                   Projects
                 </a>
